@@ -24,6 +24,9 @@ const SubdomainRestModePage = () => {
     case 'svm':
       projectName = 'Subdomain Vacation Mode';
       break;
+    case 'localhost':
+      projectName = 'Localhost';
+      break;
     default:
       projectName = '[Insert Project Name Here]';
   }
