@@ -1,5 +1,5 @@
 import './App.css';
-import SubdomainRestModePage from './SubdomainBreakModePage';
+import SubdomainRestModePage from './SubdomainVacationModePage';
 
 function App() {
   return <SubdomainRestModePage />;

@@ -41,6 +41,10 @@
   color: #888;
 }
 
+.read-the-fine-print {
+  font-size: 0.6em;
+}
+
 .resized-image {
   width: 200px;
   height: auto;
