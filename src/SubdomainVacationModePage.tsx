@@ -50,7 +50,11 @@ const SubdomainRestModePage = () => {
         </div>
       ) : (
         <div>
-          <h2>Is this page!</h2>
+          <h2>Is this project!</h2>
+          <p>It allows other projects to go into vacation mode with a slick fallback webpage, and thus save on cloud computing bills.</p>
+          <p className='read-the-docs'>
+            To learn more about it, please check out the project <a href='https://github.com/cryptoblivious/subdomain-vacation-mode'>here</a>.
+          </p>
           <img
             src='/assets/cat_on_pc.webp'
             alt='cat_on_pc'
