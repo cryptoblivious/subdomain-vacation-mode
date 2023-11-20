@@ -7,7 +7,7 @@ const SubdomainRestModePage = () => {
     const hostname = window.location.hostname;
     console.log('hostname: ', hostname);
     const parts = hostname.split('.');
-    const extractedSubdomain = parts.length > 2 ? parts[0] : 'default'; // Handle default case
+    const extractedSubdomain = parts[0];
 
     setSubdomain(extractedSubdomain);
   }, []);
