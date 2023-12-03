@@ -10,30 +10,28 @@ const SubdomainRestModePage = () => {
     const extractedSubdomain = parts[0];
 
     setSubdomain(extractedSubdomain);
+
+    document.title = getTitleFromSubdomain(extractedSubdomain);
   }, []);
 
-  let projectName = '';
-
-  switch (subdomain) {
-    case 'tls':
-      projectName = 'The Last Stand';
-      break;
-    case 'magix':
-      projectName = 'Magix : The Last Cardbender';
-      break;
-    case 'svm':
-      projectName = 'Subdomain Vacation Mode';
-      break;
-    case 'localhost':
-      projectName = 'Localhost';
-      break;
-    default:
-      projectName = '[Insert Project Name Here]';
-  }
+  const getTitleFromSubdomain = (subdomain: string) => {
+    switch (subdomain) {
+      case 'tls':
+        return 'The Last Stand';
+      case 'magix':
+        return 'Magix : The Last Cardbender';
+      case 'svm':
+        return 'Subdomain Vacation Mode';
+      case 'localhost':
+        return 'Localhost';
+      default:
+        return '[Insert Project Name Here]';
+    }
+  };
 
   return (
     <div>
-      <h1>{projectName}</h1>
+      <h1>{document.title}</h1>
       {subdomain != 'svm' ? (
         <div>
           <h2>Is currently enjoying well deserved vacations.</h2>
